@@ -181,6 +181,7 @@
          background: -webkit-gradient(linear, left top, right top, from(rgb(253, 114, 44)), to(rgb(242, 23, 129)));
         background: -o-linear-gradient(left, rgb(253, 114, 44), rgb(242, 23, 129));
         background: linear-gradient(to right, rgb(253, 114, 44), rgb(242, 23, 129));
+     color: #fff;
     }
     
     .banner_iphones {
