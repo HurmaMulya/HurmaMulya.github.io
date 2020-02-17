@@ -63,63 +63,34 @@ btnLeft = document.querySelector('#arrLeft');
 btnRight = document.querySelector('#arrRight');
 
 btnLeft.addEventListener('click', () => {
-    if (window.clientWidth > 1025) {
-        if (card2.classList.contains('customers_slider__item_active')) {
-            card2.classList.remove('customers_slider__item_active');
-            card1.classList.add('customers_slider__item_active');
-        } else if (card3.classList.contains('customers_slider__item_active')) {
-            card3.classList.remove('customers_slider__item_active');
-            card2.classList.add('customers_slider__item_active');
-        } else if (card1.classList.contains('customers_slider__item_active')) {
-            card1.classList.remove('customers_slider__item_active');
-            card3.classList.add('customers_slider__item_active');
+    if (card2.classList.contains('customers_slider__item_active')) {
+        card2.classList.remove('customers_slider__item_active');
+        card1.classList.add('customers_slider__item_active');
+    } else if (card3.classList.contains('customers_slider__item_active')) {
+        card3.classList.remove('customers_slider__item_active');
+        card2.classList.add('customers_slider__item_active');
+    } else if (card1.classList.contains('customers_slider__item_active')) {
+        card1.classList.remove('customers_slider__item_active');
+        card3.classList.add('customers_slider__item_active');
 
-        }
-    } else if (window.clientWidth < 1025) {
-        if (card2.classList.contains('customers_slider__item_active')) {
-            card2.classList.remove('customers_slider__item_active');
-            card1.classList.add('customers_slider__item_active');
-        } else if (card3.classList.contains('customers_slider__item_active')) {
-            card3.classList.remove('customers_slider__item_active');
-            card2.classList.add('customers_slider__item_active');
-        } else if (card1.classList.contains('customers_slider__item_active')) {
-            card1.classList.remove('customers_slider__item_active');
-            card3.classList.add('customers_slider__item_active');
 
-        }
     }
 })
 
 btnRight.addEventListener('click', () => {
-    if (widthWindow > 1025) {
-
-        if (card2.classList.contains('customers_slider__item_active')) {
-            card2.classList.remove('customers_slider__item_active');
-            card3.classList.add('customers_slider__item_active');
-        } else if (card1.classList.contains('customers_slider__item_active')) {
-            card1.classList.remove('customers_slider__item_active');
-            card2.classList.add('customers_slider__item_active');
-        } else if (card3.classList.contains('customers_slider__item_active')) {
-            card3.classList.remove('customers_slider__item_active');
-            card1.classList.add('customers_slider__item_active');
-
-        }
-    } else if (widthWindow < 1025) {
-        if (card2.classList.contains('customers_slider__item_active')) {
-            card2.classList.remove('customers_slider__item_active');
-            card3.classList.add('customers_slider__item_active');
-            card2.pageYOffset
-        } else if (card1.classList.contains('customers_slider__item_active')) {
-            card1.classList.remove('customers_slider__item_active');
-            card2.classList.add('customers_slider__item_active');
-        } else if (card3.classList.contains('customers_slider__item_active')) {
-            card3.classList.remove('customers_slider__item_active');
-            card1.classList.add('customers_slider__item_active');
-
-        }
-
+    if (card2.classList.contains('customers_slider__item_active')) {
+        card2.classList.remove('customers_slider__item_active');
+        card3.classList.add('customers_slider__item_active');
+    } else if (card1.classList.contains('customers_slider__item_active')) {
+        card1.classList.remove('customers_slider__item_active');
+        card2.classList.add('customers_slider__item_active');
+    } else if (card3.classList.contains('customers_slider__item_active')) {
+        card3.classList.remove('customers_slider__item_active');
+        card1.classList.add('customers_slider__item_active');
 
     }
+
+
 })
 
 
