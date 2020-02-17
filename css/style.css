@@ -182,6 +182,7 @@
         background: -o-linear-gradient(left, rgb(253, 114, 44), rgb(242, 23, 129));
         background: linear-gradient(to right, rgb(253, 114, 44), rgb(242, 23, 129));
      color: #fff;
+      border: #e0e0e0;
     }
     
     .banner_iphones {
