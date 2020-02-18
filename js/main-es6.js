@@ -52,12 +52,11 @@
 }());
 // Smooth Scroll End
 
-// Carousel Customers Start
+// Carousel Customers Start'
 card1 = document.querySelector('#cust1');
 card2 = document.querySelector('#cust2');
 card3 = document.querySelector('#cust3');
-position = 0;
-let widthWindow = document.documentElement.clientWidth;
+
 
 btnLeft = document.querySelector('#arrLeft');
 btnRight = document.querySelector('#arrRight');
@@ -69,11 +68,6 @@ btnLeft.addEventListener('click', () => {
     } else if (card3.classList.contains('customers_slider__item_active')) {
         card3.classList.remove('customers_slider__item_active');
         card2.classList.add('customers_slider__item_active');
-    } else if (card1.classList.contains('customers_slider__item_active')) {
-        card1.classList.remove('customers_slider__item_active');
-        card3.classList.add('customers_slider__item_active');
-
-
     }
 })
 
@@ -84,10 +78,6 @@ btnRight.addEventListener('click', () => {
     } else if (card1.classList.contains('customers_slider__item_active')) {
         card1.classList.remove('customers_slider__item_active');
         card2.classList.add('customers_slider__item_active');
-    } else if (card3.classList.contains('customers_slider__item_active')) {
-        card3.classList.remove('customers_slider__item_active');
-        card1.classList.add('customers_slider__item_active');
-
     }
 
 
